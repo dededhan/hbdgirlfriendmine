@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Happy Birthday - A special message for you">
+    <title>Happy Birthday My Love 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div class="welcome-screen active" id="welcomeScreen">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Happy Birthday</h1>
+                <p class="welcome-subtitle">To the most amazing person in my life</p>
+                <button class="start-button" id="startButton">
+                    <span>Tap to Open Your Gift</span>
+                    <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Envelope Screen -->
+        <div class="envelope-screen" id="envelopeScreen">
+            <div class="envelope" id="envelope">
+                <div class="envelope-flap"></div>
+                <div class="envelope-body">
+                    <div class="envelope-front">
+                        <div class="love-text">LOVE</div>
+                    </div>
+                    <div class="envelope-seal">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Single Letter with Everything -->
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <div class="letter-header">
+                            <h2>My Dearest Love,</h2>
+                        </div>
+
+                        <!-- Photo Gallery -->
+                        <div class="photo-gallery">
+                            <div class="gallery-container">
+                                <button class="gallery-nav prev" id="prevPhoto">‹</button>
+                                <div class="photo-wrapper">
+                                    <div class="polaroid active" data-index="0">
+                                        <img src="images/love1.jpeg" alt="Our beautiful moments">
+                                        <p class="photo-caption">Every moment with you ✨</p>
+                                    </div>
+                                    <div class="polaroid" data-index="1">
+                                        <img src="images/love2.jpeg" alt="Happy together">
+                                        <p class="photo-caption">Your smile lights up my world 💕</p>
+                                    </div>
+                                    <div class="polaroid" data-index="2">
+                                        <img src="images/love3.jpeg" alt="Love gesture">
+                                        <p class="photo-caption">Forever and always ❤️</p>
+                                    </div>
+                                    <div class="polaroid" data-index="3">
+                                        <img src="images/love4.jpeg" alt="Together forever">
+                                        <p class="photo-caption">You and me, always 💖</p>
+                                    </div>
+                                    <div class="polaroid" data-index="4">
+                                        <img src="images/love5.jpeg" alt="Sweet moments">
+                                        <p class="photo-caption">Making memories together 🌟</p>
+                                    </div>
+                                    <div class="polaroid" data-index="5">
+                                        <img src="images/love6.jpeg" alt="Love and laughter">
+                                        <p class="photo-caption">You complete me 💝</p>
+                                    </div>
+                                    <div class="polaroid" data-index="6">
+                                        <img src="images/birthday.jpeg" alt="Birthday celebration">
+                                        <p class="photo-caption">Celebrating YOU today! 🎂</p>
+                                    </div>
+                                </div>
+                                <button class="gallery-nav next" id="nextPhoto">›</button>
+                            </div>
+                            <div class="gallery-dots" id="galleryDots">
+                                <span class="dot active" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                                <span class="dot" data-index="2"></span>
+                                <span class="dot" data-index="3"></span>
+                                <span class="dot" data-index="4"></span>
+                                <span class="dot" data-index="5"></span>
+                                <span class="dot" data-index="6"></span>
+                            </div>
+                        </div>
+
+                        <!-- Music Player -->
+                        <div class="music-player">
+                            <button class="music-toggle" id="musicToggle">
+                                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                                <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+                                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+                                </svg>
+                                <span class="music-text">Play Birthday Music</span>
+                            </button>
+                        </div>
+
+                        <div class="letter-body" id="letterBody">
+                            <p>Dear Malika Rasifa Dewi Miwanti 🫶</p>
+                            <p>Happy birthday, Support System terbaik aku, kesayangan aku, dan satu-satunya cewek yang
+                                sabarnya setebal kodingan aku 🥰🥰🥳💖</p>
+                            <p>Di hari spesial ini, aku mau minta maaf dulu deh. Maafin pacarmu ini ya, yang kalau udah
+                                ketemu laptop suka lupa dunia, yang kalau lagi benerin codingan suka lupa ngabarin, dan
+                                sering bikin kamu nunggu cuma gara-gara aku. Aku tau, aku sering bikin kamu kesel, tapi
+                                makasih banget udah ngertiin dunia aku.</p>
+                            <p>Tapi asal kamu tau, Yang...</p>
+                            <p>Setiap baris kode yang aku ketik, setiap project yang aku kerjain sampai begadang, itu
+                                semua motivasinya cuma satu: Kamu.</p>
+                            <p>Aku kerja keras sekarang, aku sibuk sekarang, biar nanti aku bisa kasih masa depan yang
+                                paling bahagia buat kita. Biar nanti kita nggak cuma mimpi, tapi bisa wujudin semuanya
+                                bareng-bareng. Di layar laptop mungkin isinya skrip rumit, tapi di otak aku isinya cuma
+                                gimana caranya biar bisa cepet sukses dan bahagiain Malika 🥰💻💍</p>
+                            <p>Selamat ulang tahun ya, Cantik.</p>
+                            <p>Tetep jadi eror terindah di hidup aku ya. satu-satunya eror yang nggak akan pernah aku
+                                fix biar kamu nempel terus di hati aku selamanya 😜❤️</p>
+                            <p>I love you more than my codes (and that's a lot!) 😝💞</p>
+                        </div>
+                        <div class="letter-footer">
+                            <p>Salam sayang,</p>
+                            <p class="signature">Si Tukang Coding-mu, Dede</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tap-hint" id="tapHint">Tap the envelope to open</p>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
